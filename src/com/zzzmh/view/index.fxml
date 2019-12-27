@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane prefHeight="-Infinity" prefWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zzzmh.controller.IndexController">
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="-Infinity" BorderPane.alignment="CENTER">
+            <items>
+                <Button mnemonicParsing="false" onAction="#prev" text="后退"/>
+                <Button mnemonicParsing="false" onAction="#next" text="前进"/>
+                <Button mnemonicParsing="false" onAction="#refresh" text="刷新"/>
+                <Button mnemonicParsing="false" onAction="#home" text="首页"/>
+                <Label text="地址"/>
+                <TextField fx:id="url" prefWidth="980"/>
+                <Button mnemonicParsing="false" onAction="#forward" text="跳转"/>
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <WebView fx:id="webview" prefHeight="-Infinity" prefWidth="-Infinity" BorderPane.alignment="CENTER"/>
+    </center>
+</BorderPane>
