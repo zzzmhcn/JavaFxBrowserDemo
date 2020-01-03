@@ -7,19 +7,25 @@
 <BorderPane prefHeight="-Infinity" prefWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zzzmh.controller.IndexController">
     <top>
+        <!-- 工具栏 -->
         <ToolBar prefHeight="40.0" prefWidth="-Infinity" BorderPane.alignment="CENTER">
             <items>
+                <!-- 按钮-->
                 <Button mnemonicParsing="false" onAction="#prev" text="后退"/>
                 <Button mnemonicParsing="false" onAction="#next" text="前进"/>
                 <Button mnemonicParsing="false" onAction="#refresh" text="刷新"/>
                 <Button mnemonicParsing="false" onAction="#home" text="首页"/>
+                <!-- 标签 -->
                 <Label text="地址"/>
+                <!-- 地址栏 -->
                 <TextField fx:id="url" prefWidth="980"/>
+                <!-- 跳转按钮 -->
                 <Button mnemonicParsing="false" onAction="#forward" text="跳转"/>
             </items>
         </ToolBar>
     </top>
     <center>
+        <!-- WebView -->
         <WebView fx:id="webview" prefHeight="-Infinity" prefWidth="-Infinity" BorderPane.alignment="CENTER"/>
     </center>
 </BorderPane>
