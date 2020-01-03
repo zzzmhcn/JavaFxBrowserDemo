@@ -1,8 +1,10 @@
-# JavaFxBrowserDemo
+# JavaFxBrowserDemo （ JavaFX 简易的浏览器 ）
 
 ## 介绍
 
-自学javafx练手项目
+自学 JavaFX 练手项目
+
+用JavaFX 写一个简易的浏览器
 
 ## 环境
 
